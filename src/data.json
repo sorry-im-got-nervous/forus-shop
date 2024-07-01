@@ -2,6 +2,7 @@
   "products": [
     {
       "name": "Классическая футболка Супрематизм",
+      "price": 1399.99,
       "slug": "shirt_classic",
       "image": "shirt_classic.jpg",
       "id": 1,
@@ -10,6 +11,7 @@
       "experiences": [
         {
           "name": "Футболка Кот с ножом What Cat",
+          "price": 1129.99,
           "slug": "shirt_cat",
           "image": "shirt_cat.jpg",
           "description":
@@ -17,6 +19,7 @@
         },
         {
           "name": "Футболка Таблица Д. А. Сивцева.",
+          "price": 1235.99,
           "slug": "shirt_table",
           "image": "shirt_table.jpg",
           "description":
@@ -24,6 +27,7 @@
         },
         {
           "name": "Футболка Doctor Who Old School Game",
+          "price": 1235.99,
           "slug": "shirt_game",
           "image": "shirt_game.jpg",
           "description":
@@ -31,6 +35,7 @@
         },
         {
           "name": "Футболка I'm enot you are not",
+          "price": 1139.99,
           "slug": "shirt_enot",
           "image": "shirt_enot.jpg",
           "description":
@@ -40,6 +45,7 @@
     },
     {
       "name": "Толстовка худи Alvin",
+      "price": 2456.00,
       "slug": "hoodie_alvin",
       "image": "hoodie_alvin.jpg",
       "id": 2,
@@ -48,6 +54,7 @@
       "experiences": [
         {
           "name": "Толстовка худи Linux",
+          "price": 2456.00,
           "slug": "hoodie_linux",
           "image": "hoodie_linux.jpg",
           "description":
@@ -55,6 +62,7 @@
         },
         {
           "name": "Свитшот Зима близко. Новогодняя",
+          "price": 2389.50,
           "slug": "hoodie_winter",
           "image": "hoodie_winter.jpg",
           "description":
@@ -62,6 +70,7 @@
         },
         {
           "name": "Толстовка худи NASA DS",
+          "price": 2389.50,
           "slug": "hoodie_nasa",
           "image": "hoodie_nasa.jpg",
           "description":
@@ -69,6 +78,7 @@
         },
         {
           "name": "Толстовка худи Python",
+          "price": 2389.50,
           "slug": "hoodie_python",
           "image": "hoodie_python.jpg",
           "description":
@@ -78,6 +88,7 @@
     },
     {
       "name": "Кепка-тракер FBI",
+      "price": 915.00,
       "slug": "cap_fbi",
       "image": "cap_fbi.jpg",
       "id": 3,
@@ -86,6 +97,7 @@
       "experiences": [
         {
           "name": "Кепка-тракер Doom",
+          "price": 915.00,
           "slug": "cap_doom",
           "image": "cap_doom.jpg",
           "description":
@@ -93,6 +105,7 @@
         },
         {
           "name": "Кепка-тракер Вампир",
+          "price": 915.00,
           "slug": "cap_vampire",
           "image": "cap_vampire.jpg",
           "description":
@@ -100,6 +113,7 @@
         },
         {
           "name": "Кепка бейсболка Мозг",
+          "price": 856.00,
           "slug": "cap_brain",
           "image": "cap_brain.jpg",
           "description":
@@ -107,6 +121,7 @@
         },
         {
           "name": "Кепка-тракер NASA",
+          "price": 915.00,
           "slug": "cap_nasa",
           "image": "cap_nasa.jpg",
           "description":
@@ -116,6 +131,7 @@
     },
     {
       "name": "Подушка Теннисный мяч",
+      "price": 1635.00,
       "slug": "pillow_ball",
       "image": "pillow_ball.jpg",
       "id": 4,
@@ -124,6 +140,7 @@
       "experiences": [
         {
           "name": "Подушка Который рядом",
+          "price": 1620.00,
           "slug": "pillow_cat",
           "image": "pillow_cat.jpg",
           "description":
@@ -131,6 +148,7 @@
         },
         {
           "name": "Подушка Пиксельная овца",
+          "price": 1245.00,
           "slug": "pillow_sheep",
           "image": "pillow_sheep.jpg",
           "description":
@@ -138,6 +156,7 @@
         },
         {
           "name": "Подушка Pac-Man. PacMan. ПакМан. ПакМен. Pixels. Ready!",
+          "price": 1345.00,
           "slug": "pillow_pac-man",
           "image": "pillow_pac-man.jpg",
           "description":
@@ -145,6 +164,7 @@
         },
         {
           "name": "Подушка Soft kitty warm kitty, happy kitty sleepy kitty",
+          "price": 1265.00,
           "slug": "pillow_kitty",
           "image": "pillow_kitty.jpg",
           "description":

@@ -1,10 +1,12 @@
 <template>
     <div>
-    <section v-if="product" class="product">
+      <section v-if="product" class="product">
       <h1>{{product.name}}</h1>
       <div class="product-details">
         <img :src="`/images/${product.image}`" :alt="product.name" />
         <p>{{ product.description }}</p>
+        <p>Цена: {{ product.price.toFixed(2) }} ₽</p>
+        <button class="btn" @click="addToCart">Добавить в корзину</button>
       </div>
     </section>
     <section class="experiences">
@@ -47,5 +49,17 @@
         );
       },
     },
+    methods: {
+  addToCart() {
+    const product = {
+      id: this.product.id,
+      name: this.product.name,
+      image: `/images/${this.product.image}`,
+      price: this.product.price,
+      type: 'product'
+    };
+    this.$store.dispatch('addToCart', product);
+  }
+}
   }
   </script>
