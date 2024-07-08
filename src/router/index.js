@@ -40,15 +40,6 @@ const routes = [
     props: route => ({...route.params, id: parseInt(route.params.id)})
   },
   {
-    path: '/experience/:id/:slug',
-    name: 'experience.show',
-    component: () => import('@/views/ExperienceShow.vue'),
-    props: route => ({
-      ...route.params, 
-      id: parseInt(route.params.id)
-    })
-  },
-  {
     path: '/clothing/:category', // Динамический маршрут для категорий
     name: 'clothing.category',
     component:() => import('@/views/Category.vue') ,
