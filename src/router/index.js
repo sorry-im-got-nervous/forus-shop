@@ -47,6 +47,12 @@ const routes = [
       ...route.params, 
       id: parseInt(route.params.id)
     })
+  },
+  {
+    path: '/clothing/:category', // Динамический маршрут для категорий
+    name: 'clothing.category',
+    component:() => import('@/views/Category.vue') ,
+    props: true
   }
 ]
 

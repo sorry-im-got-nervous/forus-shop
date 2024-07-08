@@ -1,4 +1,3 @@
-<!-- App.vue или аналогичный файл -->
 <template>
   <TheNavigation/>
   <div class="container">

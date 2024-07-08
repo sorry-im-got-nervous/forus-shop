@@ -9,35 +9,14 @@
         <button class="btn" @click="addToCart">Добавить в корзину</button>
       </div>
     </section>
-    <section class="experiences">
-      <h2>Похожие товары</h2>
-      <div class="cards">
-        <router-link
-          v-for="experience in product.experiences"
-          :key="experience.slug"
-          :to="{
-            name: 'experience.show', 
-            params: {
-              id: product.id,
-              slug: experience.slug
-            }
-          }"
-        >
-          <ExperienceCard
-            :experience="experience"
-          />
-        </router-link>
-      </div>
-    </section>
     </div>
   </template>
   
   <script>
   import sourceData from '@/data.json';
-  import ExperienceCard from "@/components/ExperienceCard.vue";
+
   
   export default {
-    components: { ExperienceCard },
     props: {
       id: { type: Number, required: true },
       slug: { type: String, required: true },

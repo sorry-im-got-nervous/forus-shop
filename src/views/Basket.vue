@@ -2,17 +2,14 @@
   <div class="basket">
     <h1>Корзина</h1>
     <ul>
-      <li 
-        v-for="item in cart" 
-        :key="item.id" 
-        class="product-item"
-        @click="goToItem(item)"
-      >
+      <li v-for="item in cart" :key="item.id" class="product-item">
         <div class="product-image">
           <img :src="item.image" :alt="item.name" />
         </div>
-        <span>{{ item.name }}</span>
-        <span>Цена: {{ item.price.toFixed(2) }} ₽</span>
+        <div class="product-details">
+          <span class="product-name">{{ item.name }}</span>
+          <span class="product-price">Цена: {{ item.price.toFixed(2) }} ₽</span>
+        </div>
       </li>
     </ul>
     <!-- Итого после списка -->
@@ -63,15 +60,9 @@ p {
 .product-item {
   cursor: pointer;
 }
-</style>
-
-<style scoped>
 .product-item {
   cursor: pointer;
 }
-</style>
-
-<style scoped>
 .product-item {
   display: flex;
   align-items: center;
@@ -91,5 +82,12 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+.product-name {
+  margin-bottom: 0.5rem; /* Добавляет отступ снизу для имени товара */
 }
 </style>

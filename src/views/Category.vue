@@ -1,17 +1,17 @@
 <template>
-    <div class="home">
+    <div class="clothing-category">
       <div id="clothing-nav">
         <router-link to="/clothing/shirts">Футболки</router-link>
         <router-link to="/clothing/pants">Брюки</router-link>
         <router-link to="/clothing/headwear">Головные уборы</router-link>
         <router-link to="/clothing/home-decor">Домашний декор</router-link>
       </div>
-      <h1>Все товары</h1>
+      <h1>{{ categoryName }}</h1>
       <div class="items-grid">
         <router-link
-          v-for="product in products"
+          v-for="product in categoryProducts"
           :key="product.id"
-          :to="{name: 'product.show', params:{id: product.id, slug: product.slug}}"
+          :to="{ name: 'product.show', params: { id: product.id, slug: product.slug }}"
           class="item product"
         >
           <h2>{{ product.name }}</h2>
@@ -29,6 +29,14 @@
       return {
         products: sourceData.products,
       };
+    },
+    computed: {
+      categoryName() {
+        return this.$route.params.category || 'Категория не найдена';
+      },
+      categoryProducts() {
+        return this.products.filter(product => product.category === this.$route.params.category);
+      }
     }
   };
   </script>
